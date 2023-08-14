@@ -1,0 +1,454 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type:mandatory;
+}
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.content{
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+.header{
+  background-image: url(images/bg-hero-desktop.svg);
+  background-color:hsl(193, 100%, 96%);
+  height: 950px;
+  margin-bottom: 160px;
+}
+.header .nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 88%;
+  margin: auto;
+}
+.header .nav .img,
+.header .nav img{
+  margin-top: 37.5px;
+  width: 260px;
+}
+
+.header .nav button{
+  margin-top: 65px;
+  width: 265px;
+  height: 60px;
+  border-radius: 200px;
+  border-style: none;
+  color: hsl(192, 100%, 9%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+  cursor: pointer;
+
+}
+.header .header-content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 89%
+
+}
+
+.header-content .img,
+.header .img .img-mocup{
+  order: 2;
+  max-width: 910px;
+  margin-top: 45px;
+
+
+}
+.header-content .left-side{
+  order: 1;
+  display: flex;
+  flex-flow: column wrap;
+  width: 680px;
+}
+.header-content .left-side h1{
+
+  font-size: 55px;
+  margin-top: 110px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing:-1.5px;
+  line-height: 80px;
+  color:  hsl(192, 100%, 9%);
+}
+
+.header-content .left-side p{
+  margin-top: 35px;
+  line-height: 35px;
+  letter-spacing: -0.5px;
+  font-size: 25px;
+  color: hsl(192,100%,9%);
+  font-family: 'Open Sans', sans-serif;
+
+}
+.header .left-side button{
+  margin-top: 40px;
+  height: 73px;
+  width: 370px;
+  border-radius: 100px;
+  border-style: none;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  font-size: 19px;
+  font-family:'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.first-card,
+.sec-card,
+.third-card{
+
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  width: 1620px;
+  height: 580px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+  border-radius: 20px;
+}
+.first-card .content,
+.sec-card .content,
+.third-card .content{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  height: 105%;
+  margin: auto;
+  
+}
+.first-card .right-side,
+.third-card .right-side{
+  order: 2;
+
+}
+.first-card .right-side img,
+.sec-card .right-side img,
+.third-card .right-side img{
+  max-width: 540px;
+  margin-left: 110px;
+}
+.first-card .left-side,
+.third-card .left-side{
+  order: 1;
+  margin-left: 115px;
+  margin-bottom: 10px;
+}
+.first-card .left-side h1,
+.sec-card .left-side h1,
+.third-card .left-side h1{
+  font-family: 'Poppins', sans-serif;
+  color:  hsl(192, 100%, 9%);
+  font-size: 36px;
+  margin-bottom: 0px;
+  letter-spacing: 0.5px;
+}
+.first-card .left-side p,
+.sec-card .left-side p,
+.third-card .left-side p{
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(208, 11%, 55%);
+  font-size: 25px;
+  letter-spacing: -0.75px;
+  margin-top: 20px;
+}
+.third-card .content{
+ margin-top: 10px;
+}
+.final-card{
+  position:absolute;
+  z-index: 2;
+  bottom: 630px;
+  width: 1050px;
+  height: 370px;
+  border-radius: 20px;
+  background-color: rgb(255, 253, 253);
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+}
+.final-card h1{
+  font-family: 'Poppins', sans-serif ;
+  color: hsl(192, 100%, 9%);
+  font-weight: 600;
+  margin-top: 65px;
+  font-size: 40px;
+  letter-spacing: 1px;
+
+}
+.final-card button{
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  background: hsl(322, 100%, 66%);
+  border-style: none;
+  border-radius: 50px;
+  height: 105px;
+  color: white;
+  font-size: 27px;
+  margin-top: 55px;
+  width: 530px;
+  margin-bottom: 40px;
+}
+
+.footer{
+  background-color:hsl(192, 100%, 9%);
+  margin-top:475px;
+  height: 750px;
+}
+
+.footer .content {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 250px;
+  justify-content: space-between;
+  width: 76.5%;
+  margin-left: 4.1cm;
+  color: white;
+  font-family: 'Open Sans',sans-serif;
+}
+.footer .content .left{
+  display: flex;
+  flex-flow: column wrap;
+  align-items:flex-start;
+  justify-content: space-between;
+  height:325px;
+  width: 485px;
+}
+.footer .content .left img{
+  color: rgb(255, 255, 255);
+  filter:brightness(0)invert(100%);
+  width: 320px;
+  margin-bottom: 23px;
+}
+.footer .content .mail,
+.footer .content .adress,
+.footer .content .phone{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  width: 100%;
+  margin-left: 5px;
+  font-size: 21px;
+  line-height: 32px;
+  align-items: first baseline;
+}
+
+.footer .content .left p{
+  margin-left: 30px;
+}
+.footer .content .middle1,
+.footer .content .middle2{
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 99px;
+  height: 170px;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  line-height: 50px;
+  transition:all ease-in 0.5s;
+  border-bottom: 2px solid transparent;
+}
+
+.footer .right{
+  margin-top: 100px;
+  letter-spacing: 10px;
+
+}
+
+.copyright{
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.footer .content .right a:hover{
+  color: hsl(322, 100%, 66%) !important;
+  font-size: 30px;
+  border-bottom: transparent;
+}
+
+a:hover{
+  width: 100%;
+  border-color: rgb(255, 255, 255);
+  font-size: 26px;
+}
+button{
+  transition:all ease-in 0.3s;
+}
+button:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1800px) {
+  .header-content .img .img-mocup{
+    max-width: 700px;
+  }
+  .header-content .right-side{
+    width: 600;
+  }
+  .content{
+  }
+  .final-card{
+
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  .header .header-content{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header{
+    background-image: url(images/bg-hero-mobile.svg);
+    height: 1400px;
+  }
+  .header-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .header-content img{
+    width: 600px;
+  }
+
+
+  .header-content .left-side h1{
+    text-align: center;
+    margin-top: 100px;
+    align-self: center;
+  }
+  .header-content .left-side p{
+    text-align: center;
+    width: 450px;
+    align-self: center;
+  }
+  .header-content button{
+    align-self: center;
+  }
+  .first-card,
+  .sec-card,
+  .third-card{
+    height: 1000px;
+    width: 600px;
+  }
+  .first-card .content,
+  .sec-card .content,
+  .third-card .content{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    
+  }
+  .first-card .right-side,
+  .third-card .right-side{
+    order: 0;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .first-card .right-side img,
+  .sec-card .right-side img,
+  .third-card .right-side img{
+    max-width: 500px;
+    align-items: center;
+    margin: 0px;
+    margin-top: 100px;
+  }
+  .first-card .left-side p,
+  .sec-card .left-side p,
+  .third-card  .left-side p{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 72%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .first-card .left-side h1,
+  .sec-card .left-side h1,
+  .third-card  .left-side h1{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .first-card .left-side,
+  .sec-card .left-side,
+  .third-card  .left-side{
+    margin-left: 0;
+  }
+  .final-card{
+    width: 600px;
+    left: 50px;
+    justify-content: space-between;
+    top: 5000px;
+  }
+  .final-card h1{
+    margin: 0px;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  .footer{
+    height: 1200px;
+  }
+  .footer .content{
+    flex-flow: column wrap;
+    justify-content:start;
+    align-content: start;
+    width: 100%;
+    margin: 0px;
+    margin-top: 300px;
+  }
+  .footer .content .middle2{
+    margin: 0px;
+  }
+  .footer .content .right{
+    margin: 0px;
+    align-self: center;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+.copyright{
+  bottom: 10px;
+  left: 160px;
+  width: 360px;
+}
+
+}
